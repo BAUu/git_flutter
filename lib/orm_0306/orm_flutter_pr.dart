@@ -50,8 +50,10 @@ void main(){
 
   double asd = input_03/100;
   double sol = input_04 / (asd*asd);
-
-  print(sol);
+  String result = use1(sol);
+  print('당신은 $result입니다.');
+}
+String use1(double sol){
   String a = '';
   if(sol <18.5){
     a = '저체중';
@@ -62,5 +64,5 @@ void main(){
   }else{
     a = '비만';
   }
-  print('당신은 $a입니다.');
+  return a;
 }
